@@ -1,0 +1,185 @@
+Singleton Pattern with MongoDB - Experiment Results
+This file is generated from the Python experiment code.
+Use these results in the 2-4 page data-driven report.
+
+======================================================================
+Eager Initialization
+======================================================================
+Instance Validation Results
+Object IDs: [2745937171200, 2745937171200, 2745937171200, 2745937171200, 2745937171200]
+MongoDB Connection IDs: [2745937171728, 2745937171728, 2745937171728, 2745937171728, 2745937171728]
+Unique object count: 1
+Unique connection count: 1
+Single instance maintained: True
+Single database connection maintained: True
+
+Thread Safety Analysis Results
+Threads used: 20
+Object IDs from threads: [2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152, 2745892319152]
+Unique object count: 1
+Thread-safe in this experiment: True
+Expected thread-safe: True
+
+Performance Comparison Results
+Initialization runs: 10
+Average initialization time: 0.20414645 seconds
+Repeated access calls: 10000
+Total access time: 0.02387240 seconds
+Average access time: 0.000002387240 seconds
+
+======================================================================
+Lazy Initialization (basic)
+======================================================================
+Instance Validation Results
+Object IDs: [2745937171776, 2745937171776, 2745937171776, 2745937171776, 2745937171776]
+MongoDB Connection IDs: [2745940160336, 2745940160336, 2745940160336, 2745940160336, 2745940160336]
+Unique object count: 1
+Unique connection count: 1
+Single instance maintained: True
+Single database connection maintained: True
+
+Thread Safety Analysis Results
+Threads used: 20
+Object IDs from threads: [2745940462704, 2745940329376, 2745940462080, 2745940462320, 2745940462128, 2745940462656, 2745940462752, 2745940462224, 2745940462368, 2745940462176, 2745940462272, 2745940462608, 2745940462560, 2745940331872, 2745940461984, 2745940462032, 2745940461840, 2745940462512, 2745940462464, 2745940462416]
+Unique object count: 20
+Thread-safe in this experiment: False
+Expected thread-safe: False
+
+Performance Comparison Results
+Initialization runs: 10
+Average initialization time: 0.18606773 seconds
+Repeated access calls: 10000
+Total access time: 0.02545660 seconds
+Average access time: 0.000002545660 seconds
+
+======================================================================
+Synchronized Method
+======================================================================
+Instance Validation Results
+Object IDs: [2745940340176, 2745940340176, 2745940340176, 2745940340176, 2745940340176]
+MongoDB Connection IDs: [2745940468608, 2745940468608, 2745940468608, 2745940468608, 2745940468608]
+Unique object count: 1
+Unique connection count: 1
+Single instance maintained: True
+Single database connection maintained: True
+
+Thread Safety Analysis Results
+Threads used: 20
+Object IDs from threads: [2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168, 2745940333168]
+Unique object count: 1
+Thread-safe in this experiment: True
+Expected thread-safe: True
+
+Performance Comparison Results
+Initialization runs: 10
+Average initialization time: 0.17651331 seconds
+Repeated access calls: 10000
+Total access time: 0.03669930 seconds
+Average access time: 0.000003669930 seconds
+
+======================================================================
+Double-Checked Locking
+======================================================================
+Instance Validation Results
+Object IDs: [2745940474992, 2745940474992, 2745940474992, 2745940474992, 2745940474992]
+MongoDB Connection IDs: [2745940461504, 2745940461504, 2745940461504, 2745940461504, 2745940461504]
+Unique object count: 1
+Unique connection count: 1
+Single instance maintained: True
+Single database connection maintained: True
+
+Thread Safety Analysis Results
+Threads used: 20
+Object IDs from threads: [2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544, 2745940466544]
+Unique object count: 1
+Thread-safe in this experiment: True
+Expected thread-safe: True
+
+Performance Comparison Results
+Initialization runs: 10
+Average initialization time: 0.18350886 seconds
+Repeated access calls: 10000
+Total access time: 0.02577470 seconds
+Average access time: 0.000002577470 seconds
+
+======================================================================
+Bill Pugh Implementation
+======================================================================
+Instance Validation Results
+Object IDs: [2745940462224, 2745940462224, 2745940462224, 2745940462224, 2745940462224]
+MongoDB Connection IDs: [2745950229008, 2745950229008, 2745950229008, 2745950229008, 2745950229008]
+Unique object count: 1
+Unique connection count: 1
+Single instance maintained: True
+Single database connection maintained: True
+
+Thread Safety Analysis Results
+Threads used: 20
+Object IDs from threads: [2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984, 2745950237984]
+Unique object count: 1
+Thread-safe in this experiment: True
+Expected thread-safe: True
+
+Performance Comparison Results
+Initialization runs: 10
+Average initialization time: 0.18283896 seconds
+Repeated access calls: 10000
+Total access time: 0.03473850 seconds
+Average access time: 0.000003473850 seconds
+
+======================================================================
+Enum-based Singleton
+======================================================================
+Instance Validation Results
+Object IDs: [2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152]
+MongoDB Connection IDs: [2745940152080, 2745940152080, 2745940152080, 2745940152080, 2745940152080]
+Unique object count: 1
+Unique connection count: 1
+Single instance maintained: True
+Single database connection maintained: True
+
+Thread Safety Analysis Results
+Threads used: 20
+Object IDs from threads: [2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152, 2745940155152]
+Unique object count: 1
+Thread-safe in this experiment: True
+Expected thread-safe: True
+
+Performance Comparison Results
+Initialization runs: 10
+Average initialization time: 0.16974466 seconds
+Repeated access calls: 10000
+Total access time: 0.00892040 seconds
+Average access time: 0.000000892040 seconds
+
+======================================================================
+Comparative Summary Based on Results
+======================================================================
+Instance Validation Summary
+Eager Initialization: unique_objects=1, unique_connections=1
+Lazy Initialization (basic): unique_objects=1, unique_connections=1
+Synchronized Method: unique_objects=1, unique_connections=1
+Double-Checked Locking: unique_objects=1, unique_connections=1
+Bill Pugh Implementation: unique_objects=1, unique_connections=1
+Enum-based Singleton: unique_objects=1, unique_connections=1
+
+Multithreading Summary
+Eager Initialization: thread_safe=True, unique_objects=1
+Lazy Initialization (basic): thread_safe=False, unique_objects=20
+Synchronized Method: thread_safe=True, unique_objects=1
+Double-Checked Locking: thread_safe=True, unique_objects=1
+Bill Pugh Implementation: thread_safe=True, unique_objects=1
+Enum-based Singleton: thread_safe=True, unique_objects=1
+
+Performance Summary
+Eager Initialization: avg_init=0.20414645s, avg_access=0.000002387240s
+Lazy Initialization (basic): avg_init=0.18606773s, avg_access=0.000002545660s
+Synchronized Method: avg_init=0.17651331s, avg_access=0.000003669930s
+Double-Checked Locking: avg_init=0.18350886s, avg_access=0.000002577470s
+Bill Pugh Implementation: avg_init=0.18283896s, avg_access=0.000003473850s
+Enum-based Singleton: avg_init=0.16974466s, avg_access=0.000000892040s
+
+Observed Findings
+Fastest initialization in this run: Enum-based Singleton
+Fastest repeated access in this run: Enum-based Singleton
+Implementations that produced multiple objects in the thread test: Lazy Initialization (basic)
