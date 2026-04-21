@@ -1,6 +1,5 @@
 Singleton Pattern with MongoDB - Experiment Results
 This file is generated from the Python experiment code.
-Use these results in the 2-4 page data-driven report.
 
 ======================================================================
 Eager Initialization

@@ -30,8 +30,7 @@ def add_section(lines, title):
 def run_all_experiments():
     report_lines = [
         "Singleton Pattern with MongoDB - Experiment Results",
-        "This file is generated from the Python experiment code.",
-        "Use these results in the 2-4 page data-driven report.",
+        "This file is generated from the Python experiment code."
     ]
 
     instance_results = []
