@@ -1,4 +1,4 @@
-"""Experiment 1: Instance Validation."""
+
 
 from singleton_manager import create_instance, reset_singleton
 

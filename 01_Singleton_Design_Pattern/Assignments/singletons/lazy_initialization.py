@@ -1,4 +1,4 @@
-"""Basic Lazy Initialization Singleton."""
+ 
 
 import time
 

@@ -1,4 +1,4 @@
-"""Enum-based Singleton."""
+ 
 
 from enum import Enum
 

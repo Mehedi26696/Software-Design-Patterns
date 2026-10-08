@@ -1,4 +1,3 @@
-"""Runs all experiments and saves the data in a text file."""
 
 from pathlib import Path
 

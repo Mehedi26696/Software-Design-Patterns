@@ -1,5 +1,4 @@
-"""Bill Pugh style Singleton."""
-
+ 
 import threading
 import time
 

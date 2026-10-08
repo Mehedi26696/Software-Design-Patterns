@@ -1,4 +1,4 @@
-"""Common MongoDB connection code shared by all singleton classes."""
+ 
 
 import os
 import threading
@@ -12,7 +12,7 @@ load_dotenv()
 
 
 class BaseMongoDBManager:
-    """Base class for MongoDB connection managers."""
+     
 
     _init_lock = threading.Lock()
 

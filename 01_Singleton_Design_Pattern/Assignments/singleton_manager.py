@@ -1,4 +1,4 @@
-"""One place to manage all singleton implementations used in experiments."""
+ 
 
 from singletons.bill_pugh_implementation import BillPughMongoDBManager
 from singletons.double_checked_locking import DoubleCheckedMongoDBManager

@@ -1,4 +1,3 @@
-"""Experiment 2: Thread Safety Analysis."""
 
 import threading
 
@@ -14,7 +13,7 @@ def thread_task(singleton_class, result_list, index, start_line):
 def run_thread_safety_analysis(singleton_name, singleton_class, thread_count=20):
     reset_singleton(singleton_class)
 
-    # This small delay makes the race condition visible in the basic lazy version.
+     
     set_creation_delay(singleton_class, 0.01)
 
     object_ids = [None] * thread_count

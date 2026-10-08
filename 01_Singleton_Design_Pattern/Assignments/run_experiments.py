@@ -1,4 +1,4 @@
-"""Main file to run the Singleton Pattern experiments."""
+ 
 
 from experiments.experiment_runner import run_all_experiments
 

@@ -1,4 +1,4 @@
-"""Eager Initialization Singleton."""
+ 
 
 from base_mongodb_manager import BaseMongoDBManager
 

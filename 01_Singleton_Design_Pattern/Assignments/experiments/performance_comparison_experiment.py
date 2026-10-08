@@ -1,4 +1,4 @@
-"""Experiment 3: Performance Comparison."""
+
 
 import time
 
